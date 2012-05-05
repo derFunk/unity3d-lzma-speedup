@@ -7,6 +7,8 @@ How to use
 2. Copy lzma.exe from the "windows binaries" directory (or your custom build from sources) into your Unity3D tools folder
 3. -Done-
 
+A log file will be written to lzma_call_cli_arguments_log.txt within the Tools directory where you can have a look at the command line parameters which Unity3D used to call lzma.exe. You can also find the elapsed time of the compression there.
+
 How does it work?
 -----------------
 Whenever Unity3D uses LZMA compression, the "fake" lzma.exe from this Speedup Project will substitute Unity3Ds max-compression parameters (for e.g. -fb372) to those which provide fastest compression (-a0 -d0 -mt4 -fb5 -mc0 -lc0 -pb0 -mfbt2).
